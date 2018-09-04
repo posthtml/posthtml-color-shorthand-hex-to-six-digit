@@ -1,0 +1,55 @@
+{
+  "name": "posthtml-color-shorthand-hex-to-six-digit",
+  "description": "Convert shorthand hex color codes into full using PostHTML",
+  "version": "1.1.0",
+  "author": {
+    "name": "Roy Revelt",
+    "email": "roy@codsen.com",
+    "url": "https://github.com/revelt"
+  },
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/codsen/posthtml-color-shorthand-hex-to-six-digit/issues",
+  "dependencies": {
+    "color-shorthand-hex-to-six-digit": "^1.5.1",
+    "husky": "^0.14.3"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "coveralls": "*",
+    "husky": "^0.14.3",
+    "nyc": "^11.1.0",
+    "posthtml": "^0.9.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "homepage": "https://github.com/codsen/posthtml-color-shorthand-hex-to-six-digit",
+  "keywords": [
+    "html",
+    "posthtml",
+    "posthtml-plugin",
+    "email",
+    "convert",
+    "shorthand",
+    "hex",
+    "color",
+    "colour",
+    "codes",
+    "full",
+    "three",
+    "six",
+    "characters",
+    "digits"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": "codsen/posthtml-color-shorthand-hex-to-six-digit",
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "precommit": "npm test",
+    "test": "standard && nyc --reporter=html --reporter=text ava"
+  }
+}
